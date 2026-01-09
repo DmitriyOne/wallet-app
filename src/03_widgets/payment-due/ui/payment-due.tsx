@@ -1,6 +1,7 @@
 import { memo } from "react"
 import { Card } from "@/06_shared/ui/card"
 import { Icon } from "@/06_shared/ui/icon/icon"
+import { cn } from "@/06_shared/lib"
 
 type TPaymentDueStatus = "due" | "paid"
 
@@ -18,7 +19,7 @@ export const PaymentDue = memo(({ className, status, dueAmount, dueDate }: TPaym
   const description = isDue ? `You have to pay ${dueAmount} by ${dueDate}.` : "You've paid your September balance."
 
   return (
-    <Card className={className}>
+    <Card className={cn("flex flex-col h-full", className)}>
       <h3 className='text-base font-semibold text-[#030303]'>{title}</h3>
       <p className='text-sm text-[#9e9ea2] mb-3'>{description}</p>
       <Icon
