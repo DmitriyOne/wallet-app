@@ -6,15 +6,16 @@
       "title": "Salary Payment",
       "description": "Monthly salary deposit from employer",
       "amount": 5000.00,
-      "authorizedUserName": "John Smith",
+      "authorizedUserName": null,
       "status": "completed",
       "icon": {
         "provider": "fontawesome",
         "name": "fa-credit-card",
         "background": "#F6B73C"
       },
-      "date": "10/1/2024",
-      "currency": "USD"
+      "date": "01/9/2026",
+      "currency": "USD",
+      "label": "3%"
     },
     {
       "id": "b2c3d4e5-f6a7-4890-b123-c4d5e6f7a890",
@@ -29,24 +30,25 @@
         "name": "fa-store",
         "background": "#0051BA"
       },
-      "date": "10/5/2024",
+      "date": "01/8/2026",
       "currency": "USD"
     },
     {
       "id": "c3d4e5f6-a7b8-4901-c234-d5e6f7a8b901",
       "type": "debit",
       "title": "Online Subscription",
-      "description": "Monthly subscription payment",
+      "description": "Monthly subscription payment for Netflix",
       "amount": 29.99,
-      "authorizedUserName": "Michael Brown",
+      "authorizedUserName": null,
       "status": "pending",
       "icon": {
         "provider": "fontawesome",
         "name": "fa-bullseye",
         "background": "#CC0000"
       },
-      "date": "10/8/2024",
-      "currency": "EUR"
+      "date": "01/7/2026",
+      "currency": "EUR",
+      "label": "1%"
     },
     {
       "id": "d4e5f6a7-b8c9-4012-d345-e6f7a8b9c012",
@@ -54,7 +56,7 @@
       "title": "Freelance Payment",
       "description": "Payment for completed project",
       "amount": 1200.00,
-      "authorizedUserName": "Emily Davis",
+      "authorizedUserName": null,
       "status": "completed",
       "icon": {
         "provider": "fontawesome",
@@ -62,7 +64,8 @@
         "background": "#eeeeef"
       },
       "date": "10/12/2024",
-      "currency": "GBP"
+      "currency": "GBP",
+      "label": "2%"
     },
     {
       "id": "e5f6a7b8-c9d0-4123-e456-f7a8b9c0d123",
@@ -86,7 +89,7 @@
       "title": "Investment Return",
       "description": "Quarterly dividend payment",
       "amount": 350.75,
-      "authorizedUserName": "Lisa Anderson",
+      "authorizedUserName": null,
       "status": "completed",
       "icon": {
         "provider": "fontawesome",
@@ -102,7 +105,7 @@
       "title": "Utility Bill",
       "description": "Monthly electricity and water",
       "amount": 145.00,
-      "authorizedUserName": "Robert Taylor",
+      "authorizedUserName": null,
       "status": "failed",
       "icon": {
         "provider": "fontawesome",
@@ -118,7 +121,7 @@
       "title": "Refund",
       "description": "Product return refund",
       "amount": 45.99,
-      "authorizedUserName": "Jennifer Martinez",
+      "authorizedUserName": null,
       "status": "pending",
       "icon": {
         "provider": "fontawesome",
@@ -134,7 +137,7 @@
       "title": "Gas Station",
       "description": "Fuel purchase",
       "amount": 65.00,
-      "authorizedUserName": "Christopher Lee",
+      "authorizedUserName": null,
       "status": "completed",
       "icon": {
         "provider": "fontawesome",
@@ -150,7 +153,7 @@
       "title": "Bonus Payment",
       "description": "Performance bonus",
       "amount": 800.00,
-      "authorizedUserName": "Amanda White",
+      "authorizedUserName": null,
       "status": "completed",
       "icon": {
         "provider": "fontawesome",
