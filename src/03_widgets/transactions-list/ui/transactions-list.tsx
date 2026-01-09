@@ -8,7 +8,7 @@ type TTransactionsListProps = {
 
 export const TransactionsList = memo(({ transactions }: TTransactionsListProps) => {
   return (
-    <div className='space-y-1'>
+    <div className='space-y-1 bg-white px-3 rounded-lg'>
       {transactions.map((transaction) => (
         <TransactionCard
           key={transaction.id}

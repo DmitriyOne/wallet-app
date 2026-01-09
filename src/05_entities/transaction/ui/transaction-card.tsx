@@ -33,7 +33,7 @@ export const TransactionCard = memo(({ transaction, className }: TTransactionCar
   return (
     <Link
       href={`/transactions/${id}`}
-      className={cn("flex items-start gap-3 py-3", "last:border-b-0 border-b border-[#e5e5e5]", className)}
+      className={cn("flex items-center gap-3 py-3", "last:border-b-0 border-b border-[#e5e5e5]", className)}
     >
       {iconId && (
         <Icon
@@ -45,7 +45,7 @@ export const TransactionCard = memo(({ transaction, className }: TTransactionCar
       )}
 
       <div className='flex-1 min-w-0'>
-        <div className='flex items-center justify-between gap-2 mb-1'>
+        <div className='flex items-center justify-between gap-2'>
           <h3 className='text-base font-semibold text-[#030303] truncate'>{title}</h3>
           <Price
             amount={amount}
@@ -55,7 +55,7 @@ export const TransactionCard = memo(({ transaction, className }: TTransactionCar
           />
         </div>
 
-        <div className='flex items-center gap-2 mb-1'>
+        <div className='flex items-center gap-2'>
           <div className='text-sm text-[#9e9ea2] truncate flex-1'>
             {isPending && <span>Pending</span>}
             {isPending && description && <span> - </span>}
@@ -70,7 +70,7 @@ export const TransactionCard = memo(({ transaction, className }: TTransactionCar
       <Icon
         id='arrowRight'
         size='sm'
-        className='mt-1'
+        className='mt-1 mb-auto'
       />
     </Link>
   )
