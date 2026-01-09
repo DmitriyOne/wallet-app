@@ -5,6 +5,7 @@ import { join } from "node:path"
 import { isRouteErrorResponse } from "react-router"
 import { Link } from "@/06_shared/ui"
 import type { TTransactionDetail } from "@/05_entities/transaction"
+import { paths } from "@/06_shared/constants"
 
 export function meta({ params }: Route.MetaArgs) {
   const title = params.id ? `Transaction ${params.id}` : "Transaction Detail"
@@ -40,7 +41,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
         <h1 className='text-6xl font-bold text-[#030303] mb-4'>404</h1>
         <p className='text-xl text-[#9e9ea2] mb-8'>Transaction not found</p>
         <Link
-          href='/transactions'
+          href={paths.transactions}
           className='inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors'
         >
           Back to Transactions

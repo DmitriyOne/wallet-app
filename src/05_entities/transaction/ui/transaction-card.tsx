@@ -7,6 +7,7 @@ import { cn } from "@/06_shared/lib/tailwind-classes"
 import { getIconIdFromName } from "@/06_shared/lib/icons"
 import type { TTransaction } from "../model"
 import { TRANSACTION_STATUSES } from "../model"
+import { paths } from "@/06_shared/constants"
 
 type TTransactionCardProps = {
   transaction: TTransaction
@@ -25,6 +26,8 @@ export const TransactionCard = memo(({ transaction, className }: TTransactionCar
   const isPending = status === TRANSACTION_STATUSES.PENDING
   const hasAuthorizedUser = Boolean(authorizedUserName)
 
+  const href = paths.transaction_detail(id)
+
   const dateText = formattedDate || date
   const dateDisplay = hasAuthorizedUser ? `${authorizedUserName} - ${dateText}` : dateText
 
@@ -32,7 +35,7 @@ export const TransactionCard = memo(({ transaction, className }: TTransactionCar
 
   return (
     <Link
-      href={`/transactions/${id}`}
+      href={href}
       className={cn("flex items-center gap-3 py-3", "last:border-b-0 border-b border-[#e5e5e5]", className)}
     >
       {iconId && (

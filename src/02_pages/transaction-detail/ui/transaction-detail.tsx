@@ -5,6 +5,7 @@ import { Icon, Link } from "@/06_shared/ui"
 import { Card } from "@/06_shared/ui/card"
 import { TRANSACTION_STATUSES, type TTransactionDetail } from "@/05_entities/transaction"
 import { useMemo } from "react"
+import { paths } from "@/06_shared/constants"
 
 export const TransactionDetailPage = () => {
   const detail = useLoaderData<TTransactionDetail>()
@@ -18,6 +19,8 @@ export const TransactionDetailPage = () => {
   const formattedDate = formatDate(date)
   const dateDisplay = formattedDate || date
   const formattedAmount = formatPrice(amount, currency) || ""
+
+  const href = paths.transaction_detail(detail.id)
 
   const getStatusText = useMemo(() => {
     switch (status) {
@@ -35,7 +38,7 @@ export const TransactionDetailPage = () => {
   return (
     <div className='container mx-auto px-4 py-8 max-w-md'>
       <Link
-        href='/transactions'
+        href={href}
         className='inline-block mb-8'
       >
         <Icon
