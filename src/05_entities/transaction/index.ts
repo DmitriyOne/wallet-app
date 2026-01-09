@@ -7,3 +7,4 @@ export {
   type TTransactionStatus,
   type TCurrency,
 } from "./model"
+export { TransactionCard } from "./ui"

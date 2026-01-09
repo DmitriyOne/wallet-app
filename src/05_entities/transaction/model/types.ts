@@ -12,6 +12,7 @@ export type TTransaction = {
   icon: TIcon
   date: string // M/D/YYYY American format (e.g., "10/1/2022")
   currency: TCurrency
+  label?: string
 }
 
 export type TTransactionListResponse = {
