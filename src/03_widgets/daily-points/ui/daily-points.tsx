@@ -1,4 +1,4 @@
-import { memo } from "react"
+import { memo, useMemo } from "react"
 import { Card } from "@/06_shared/ui/card"
 import { calculateDailyPoints, formatPoints } from "@/06_shared/lib/daily-points"
 
@@ -7,7 +7,7 @@ type TDailyPointsProps = {
 }
 
 export const DailyPoints = memo(({ className }: TDailyPointsProps) => {
-  const points = calculateDailyPoints()
+  const points = useMemo(() => calculateDailyPoints(), [])
   const formattedPoints = formatPoints(points)
 
   return (
