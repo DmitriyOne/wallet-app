@@ -6,5 +6,5 @@ type TLabelProps = {
 }
 
 export const Label = ({ text, className }: TLabelProps) => {
-  return <span className={cn("rounded-xs p-0.5 bg-[#f2f2f6] text-[#9a9a9f] leading-[100%]", className)}>{text}</span>
+  return <span className={cn("rounded-xs p-0.5 bg-[#f2f2f6] text-[#9a9a9f] leading-[100%] text-xs", className)}>{text}</span>
 }
