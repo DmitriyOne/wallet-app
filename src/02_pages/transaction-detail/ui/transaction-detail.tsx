@@ -20,8 +20,6 @@ export const TransactionDetailPage = () => {
   const dateDisplay = formattedDate || date
   const formattedAmount = formatPrice(amount, currency) || ""
 
-  const href = paths.transaction_detail(detail.id)
-
   const getStatusText = useMemo(() => {
     switch (status) {
       case TRANSACTION_STATUSES.COMPLETED:
@@ -38,7 +36,7 @@ export const TransactionDetailPage = () => {
   return (
     <div className='container mx-auto px-4 py-8 max-w-md'>
       <Link
-        href={href}
+        href={paths.transactions}
         className='inline-block mb-8'
       >
         <Icon
