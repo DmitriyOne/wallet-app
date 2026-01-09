@@ -1,0 +1,166 @@
+{
+  "transactions": [
+    {
+      "id": "a1b2c3d4-e5f6-4789-a012-b3c4d5e6f789",
+      "type": "credit",
+      "title": "Salary Payment",
+      "description": "Monthly salary deposit from employer",
+      "amount": 5000.00,
+      "authorizedUserName": "John Smith",
+      "status": "completed",
+      "icon": {
+        "provider": "fontawesome",
+        "name": "fa-credit-card",
+        "background": "#F6B73C"
+      },
+      "date": "10/1/2024",
+      "currency": "USD"
+    },
+    {
+      "id": "b2c3d4e5-f6a7-4890-b123-c4d5e6f7a890",
+      "type": "debit",
+      "title": "Grocery Store Purchase",
+      "description": "Weekly groceries at supermarket",
+      "amount": 125.50,
+      "authorizedUserName": "Sarah Johnson",
+      "status": "completed",
+      "icon": {
+        "provider": "fontawesome",
+        "name": "fa-store",
+        "background": "#0051BA"
+      },
+      "date": "10/5/2024",
+      "currency": "USD"
+    },
+    {
+      "id": "c3d4e5f6-a7b8-4901-c234-d5e6f7a8b901",
+      "type": "debit",
+      "title": "Online Subscription",
+      "description": "Monthly subscription payment",
+      "amount": 29.99,
+      "authorizedUserName": "Michael Brown",
+      "status": "pending",
+      "icon": {
+        "provider": "fontawesome",
+        "name": "fa-bullseye",
+        "background": "#CC0000"
+      },
+      "date": "10/8/2024",
+      "currency": "EUR"
+    },
+    {
+      "id": "d4e5f6a7-b8c9-4012-d345-e6f7a8b9c012",
+      "type": "credit",
+      "title": "Freelance Payment",
+      "description": "Payment for completed project",
+      "amount": 1200.00,
+      "authorizedUserName": "Emily Davis",
+      "status": "completed",
+      "icon": {
+        "provider": "fontawesome",
+        "name": "fa-check",
+        "background": "#eeeeef"
+      },
+      "date": "10/12/2024",
+      "currency": "GBP"
+    },
+    {
+      "id": "e5f6a7b8-c9d0-4123-e456-f7a8b9c0d123",
+      "type": "debit",
+      "title": "Restaurant Bill",
+      "description": "Dinner at Italian restaurant",
+      "amount": 87.25,
+      "authorizedUserName": "David Wilson",
+      "status": "completed",
+      "icon": {
+        "provider": "fontawesome",
+        "name": "fa-store",
+        "background": "#0051BA"
+      },
+      "date": "10/15/2024",
+      "currency": "USD"
+    },
+    {
+      "id": "f6a7b8c9-d0e1-4234-f567-a8b9c0d1e234",
+      "type": "credit",
+      "title": "Investment Return",
+      "description": "Quarterly dividend payment",
+      "amount": 350.75,
+      "authorizedUserName": "Lisa Anderson",
+      "status": "completed",
+      "icon": {
+        "provider": "fontawesome",
+        "name": "fa-bullseye",
+        "background": "#CC0000"
+      },
+      "date": "10/18/2024",
+      "currency": "EUR"
+    },
+    {
+      "id": "a7b8c9d0-e1f2-4345-a678-b9c0d1e2f345",
+      "type": "debit",
+      "title": "Utility Bill",
+      "description": "Monthly electricity and water",
+      "amount": 145.00,
+      "authorizedUserName": "Robert Taylor",
+      "status": "failed",
+      "icon": {
+        "provider": "fontawesome",
+        "name": "fa-credit-card",
+        "background": "#F6B73C"
+      },
+      "date": "10/20/2024",
+      "currency": "USD"
+    },
+    {
+      "id": "b8c9d0e1-f2a3-4456-b789-c0d1e2f3a456",
+      "type": "credit",
+      "title": "Refund",
+      "description": "Product return refund",
+      "amount": 45.99,
+      "authorizedUserName": "Jennifer Martinez",
+      "status": "pending",
+      "icon": {
+        "provider": "fontawesome",
+        "name": "fa-check",
+        "background": "#eeeeef"
+      },
+      "date": "10/22/2024",
+      "currency": "GBP"
+    },
+    {
+      "id": "c9d0e1f2-a3b4-4567-c890-d1e2f3a4b567",
+      "type": "debit",
+      "title": "Gas Station",
+      "description": "Fuel purchase",
+      "amount": 65.00,
+      "authorizedUserName": "Christopher Lee",
+      "status": "completed",
+      "icon": {
+        "provider": "fontawesome",
+        "name": "fa-store",
+        "background": "#0051BA"
+      },
+      "date": "10/25/2024",
+      "currency": "USD"
+    },
+    {
+      "id": "d0e1f2a3-b4c5-4678-d901-e2f3a4b5c678",
+      "type": "credit",
+      "title": "Bonus Payment",
+      "description": "Performance bonus",
+      "amount": 800.00,
+      "authorizedUserName": "Amanda White",
+      "status": "completed",
+      "icon": {
+        "provider": "fontawesome",
+        "name": "fa-credit-card",
+        "background": "#F6B73C"
+      },
+      "date": "10/28/2024",
+      "currency": "EUR"
+    }
+  ],
+  "total": 10
+}
+
