@@ -1,1 +1,1 @@
-export type { TIcon } from "./icon"
+export type { TIcon, TIconId, TRounded, TIconSize } from "./icon"
