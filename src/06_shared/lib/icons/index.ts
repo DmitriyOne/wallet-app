@@ -1,5 +1,5 @@
+import { getIconIdFromName } from "./get-icon-id-from-name"
 import { faCreditCard, faStore, faBullseye, faCheck, faChevronRight } from "@fortawesome/free-solid-svg-icons"
-import type { TIcon } from "@/06_shared/types"
 
 export const ICONS = {
   creditCard: {
@@ -27,6 +27,6 @@ export const ICONS = {
     name: "fa-chevron-right",
     background: "#cfcfd0",
   },
-} as const satisfies Record<string, TIcon>
+} as const
 
-export { faCreditCard, faStore, faBullseye, faCheck, faChevronRight }
+export { faCreditCard, faStore, faBullseye, faCheck, faChevronRight, getIconIdFromName }
