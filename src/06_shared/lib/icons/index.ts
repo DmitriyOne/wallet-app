@@ -5,6 +5,7 @@ import {
   faBullseye,
   faCheck,
   faChevronRight,
+  faChevronLeft,
   faMoneyBill1,
 } from "@fortawesome/free-solid-svg-icons"
 
@@ -34,6 +35,11 @@ export const ICONS = {
     name: "fa-chevron-right",
     background: "#cfcfd0",
   },
+  arrowLeft: {
+    provider: "fontawesome",
+    name: "fa-chevron-left",
+    background: "#cfcfd0",
+  },
   cash: {
     provider: "fontawesome",
     name: "fa-money-bill-1",
@@ -41,4 +47,4 @@ export const ICONS = {
   },
 } as const
 
-export { faCreditCard, faStore, faBullseye, faCheck, faChevronRight, faMoneyBill1, getIconIdFromName }
+export { faCreditCard, faStore, faBullseye, faCheck, faChevronRight, faChevronLeft, faMoneyBill1, getIconIdFromName }

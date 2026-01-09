@@ -1,4 +1,4 @@
-export type { TTransaction, TTransactionListResponse } from "./model"
+export type { TTransaction, TTransactionListResponse, TTransactionDetail } from "./model"
 export {
   TRANSACTION_TYPES,
   TRANSACTION_STATUSES,

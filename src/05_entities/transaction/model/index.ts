@@ -1,4 +1,4 @@
-export type { TTransaction, TTransactionListResponse } from "./types"
+export type { TTransaction, TTransactionListResponse, TTransactionDetail } from "./types"
 export {
   TRANSACTION_TYPES,
   TRANSACTION_STATUSES,

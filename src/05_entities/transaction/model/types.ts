@@ -19,3 +19,14 @@ export type TTransactionListResponse = {
   transactions: TTransaction[]
   total: number
 }
+
+export type TTransactionDetail = {
+  id: string
+  amount: number
+  bank: string
+  date: string
+  status: TTransactionStatus
+  title: string
+  currency: TCurrency
+  type: TTransactionType
+}
